@@ -21,9 +21,20 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   overflow-x: hidden;
 }
+.dropdown{
 
+
+    width:300px;
+}
+.Deneme{
+   
+    height:300px;
+}
+.Barkod {
+    height: 100px;
+}
 body {
-  background-image: url(../img/dash-bg-01.jpg);
+  
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -90,9 +101,19 @@ a:focus {
 }
 
 .tm-block {
-
+    width: 600px !important;
+    height: 600px !important;
+    border-radius: 31px;
+    
 }
 
+.tm-col-big:hover {
+    opacity: 100%;
+    
+}
+.tm-block:hover a{
+
+}
 .tm-block-title {
   font-size: 1.4rem;
   color: #333;
@@ -125,7 +146,7 @@ a:focus {
 }
 
 .tm-content-row {
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-left: -20px;
   margin-right: -20px; /* To offset col padding */
 }
@@ -137,7 +158,9 @@ a:focus {
 }
 
 .tm-col-big {
-  width: 39%;
+    width: 39%;
+    opacity: 90%;
+   
 }
 
 .tm-col-small {
@@ -397,6 +420,11 @@ footer {
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: 15px 20px;
+  }
+  .tm-block{
+
+      width:300px;
+      height:300px;
   }
 }
 

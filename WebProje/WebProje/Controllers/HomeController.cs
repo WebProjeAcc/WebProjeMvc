@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WebProje.Models;
 using System;
@@ -9,10 +10,12 @@ using System.Threading.Tasks;
 
 namespace WebProje.Controllers
 {
+    //[Authorize]  sonradan aç bunu unutma
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+       
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -23,6 +26,23 @@ namespace WebProje.Controllers
             return View();
         }
 
+     
+        public IActionResult Barkod()
+        {
+
+            return View();
+        }
+      
+        public IActionResult Kasa()
+        {
+
+            return View();
+        }
+        public IActionResult Products()
+        {
+
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
