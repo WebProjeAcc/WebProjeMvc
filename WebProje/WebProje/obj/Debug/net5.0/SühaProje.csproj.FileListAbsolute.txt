@@ -1,0 +1,82 @@
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\appsettings.json
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.exe
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.deps.json
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.runtimeconfig.json
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.runtimeconfig.dev.json
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.dll
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\ref\SühaProje.dll
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.pdb
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.Views.dll
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.Views.pdb
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.AssemblyReference.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.AssemblyInfoInputs.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.AssemblyInfo.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.CoreCompileInputs.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorAssemblyInfo.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorAssemblyInfo.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\staticwebassets\SühaProje.StaticWebAssets.Manifest.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\staticwebassets\SühaProje.StaticWebAssets.xml
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\scopedcss\bundle\SühaProje.styles.css
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.TagHelpers.input.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.TagHelpers.output.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorCoreGenerate.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorTargetAssemblyInfo.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorTargetAssemblyInfo.cs
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.Views.pdb
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.dll
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\ref\SühaProje.dll
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.pdb
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.genruntimeconfig.cache
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.CopyComplete
+C:\Users\Furkan\source\repos\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Accounts.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\appsettings.Development.json
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\appsettings.json
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.exe
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.deps.json
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.runtimeconfig.json
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.runtimeconfig.dev.json
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.dll
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\ref\SühaProje.dll
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.pdb
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.Views.dll
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\bin\Debug\net5.0\SühaProje.Views.pdb
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.AssemblyReference.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.GeneratedMSBuildEditorConfig.editorconfig
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.AssemblyInfoInputs.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.AssemblyInfo.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.CoreCompileInputs.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.MvcApplicationPartsAssemblyInfo.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorAssemblyInfo.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorAssemblyInfo.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\staticwebassets\SühaProje.StaticWebAssets.Manifest.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\staticwebassets\SühaProje.StaticWebAssets.xml
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\scopedcss\bundle\SühaProje.styles.css
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.TagHelpers.input.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.TagHelpers.output.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorCoreGenerate.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Accounts.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorTargetAssemblyInfo.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.RazorTargetAssemblyInfo.cs
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.Views.pdb
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.dll
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\ref\SühaProje.dll
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.pdb
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.genruntimeconfig.cache
+B:\bil müh b grubu döküman\3. Sınıf\1. Dönem\Web\SühaProje\SühaProje\obj\Debug\net5.0\SühaProje.csproj.CopyComplete
