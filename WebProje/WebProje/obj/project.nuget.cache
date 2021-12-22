@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IEA6wAysavUoVq2nzsX9adIuUXM2X8xOX8e2W9e1XD5pU6LCDIV3R3bu8wq+2w9sGBhkuwusBEZJ+zfglTToEg==",
+  "dgSpecHash": "ks17i1hLkgFqhm9mVA85jvm342Xsbh/WPbEopohuChRbcvltiqTXJJGZpNtXSO4svqebT3f9wkzctIXA1vibvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Furkan\\Desktop\\Ethemeat\\WebProje\\WebProje\\WebProje.csproj",
+  "projectFilePath": "C:\\Users\\Furkan\\Documents\\GitHub\\WebProjeMvc\\WebProje\\WebProje\\WebProje.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Furkan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Furkan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

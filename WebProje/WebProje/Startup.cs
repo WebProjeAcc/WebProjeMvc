@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using WebProje.Data;
+using WebProje.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebProje
 {
@@ -29,7 +31,7 @@ namespace WebProje
             services.AddControllersWithViews();
           
             services.AddRazorPages();
-          
+            
             
         }
 

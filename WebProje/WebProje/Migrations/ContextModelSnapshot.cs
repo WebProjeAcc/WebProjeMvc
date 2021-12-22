@@ -52,9 +52,6 @@ namespace WebProje.Migrations
                     b.Property<int>("ProductStock")
                         .HasColumnType("int");
 
-                    b.Property<double>("ProductWeight")
-                        .HasColumnType("float");
-
                     b.HasKey("ProductID");
 
                     b.HasIndex("CategoryID");

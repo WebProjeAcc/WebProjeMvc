@@ -8,14 +8,15 @@ namespace WebProje.Models
 {
     public class Context:DbContext
     {
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=WebProje;integrated security=true;");
+            optionsBuilder.UseSqlServer("server=(localdb)\\MSSQLLocalDB;database=WebDb;integrated security=true;");
         }
-        public DbSet<Product> Products { get; set; } 
-        public DbSet<Categoryies> Category{ get; set; } 
-       
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Categoryies> Category { get; set; }
+
 
     }
 }

@@ -11,7 +11,7 @@ namespace WebProje.Models
         public string ProductName { get; set; }
 
         public double ProductPrice{ get; set; }
-        public double ProductWeight{ get; set; }
+      
         public int ProductStock { get; set; }
         public int CategoryID { get; set; }
         public virtual Categoryies  Category { get; set; }
