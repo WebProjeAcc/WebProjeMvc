@@ -27,16 +27,28 @@ namespace WebProje
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
+
         {
+            services.AddDbContext<AppDbContext>(options =>
+                   options.UseSqlServer(
+                       Configuration.GetConnectionString("DbContextConnection")));
+
+            services.AddIdentity<Users, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+            .AddDefaultTokenProviders()
+            .AddDefaultUI()
+            .AddEntityFrameworkStores<AppDbContext>();
+
             services.AddControllersWithViews();
           
             services.AddRazorPages();
-            
-            
+
+            services.AddControllersWithViews();
+
+            services.AddScoped<IDbInitializer, DbInitializer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -50,7 +62,7 @@ namespace WebProje
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            dbInitializer.Initialize();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace WebProje.Migrations
+namespace WebProje.Migrations.AppDb
 {
-    public partial class fordb : Migration
+    public partial class deneme7 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

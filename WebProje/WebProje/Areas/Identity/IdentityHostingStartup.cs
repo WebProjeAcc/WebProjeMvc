@@ -17,14 +17,9 @@ namespace WebProje.Areas.Identity
         {
             builder.ConfigureServices((context, services) =>
             {
-                services.AddDbContext<AppDbContext>(options =>
-                    options.UseSqlServer(
-                        context.Configuration.GetConnectionString("DbContextConnection")));
+               
 
-                services.AddIdentity<Users, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddDefaultTokenProviders()
-                .AddDefaultUI()
-                .AddEntityFrameworkStores<AppDbContext>();
+
 
                 services.Configure<IdentityOptions>(options =>
                 {
@@ -37,7 +32,8 @@ namespace WebProje.Areas.Identity
 
                 }
                 );
-                
+
+              
             });
         }
     }
