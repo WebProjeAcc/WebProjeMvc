@@ -1,4 +1,21 @@
-﻿    <!-- row -->
+﻿@model IEnumerable<WebProje.Models.Users>
+@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<Users> SignInManager
+@inject UserManager<Users> UserManager
+
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Merhabalar @UserManager.GetUserName(User)!</a>
+    </li>
+    <li class="nav-item">
+        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+        </form>
+    </li>
+}
 <div class="row tm-content-row tm-mt-big">
     <div class="tm-col tm-col-big">
         <div class="bg-white tm-block">
@@ -8,27 +25,15 @@
                 </div>
             </div>
             <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                <li class="tm-list-group-item">
-                    Donec eget libero
-                </li>
-                <li class="tm-list-group-item">
-                    Nunc luctus suscipit elementum
-                </li>
-                <li class="tm-list-group-item">
-                    Maecenas eu justo maximus
-                </li>
-                <li class="tm-list-group-item">
-                    Pellentesque auctor urna nunc
-                </li>
-                <li class="tm-list-group-item">
-                    Sit amet aliquam lorem efficitur
-                </li>
-                <li class="tm-list-group-item">
-                    Pellentesque auctor urna nunc
-                </li>
-                <li class="tm-list-group-item">
-                    Sit amet aliquam lorem efficitur
-                </li>
+                @foreach (var item in Model)
+                {
+                    <li class="tm-list-group-item">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </li>
+                }
+               
+
+
             </ol>
         </div>
     </div>
@@ -42,6 +47,14 @@
             <div class="row">
                 <div class="col-12">
                     <form action="" class="tm-signup-form">
+                        <div class="form-group">
+                            <label for="Name">Name</label>
+                            <input placeholder=@UserManager.GetUserName(User) id="Name" name="Name"  value=@UserManager.GetUserName(User) type="text" class="form-control validate">
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">LastName</label>
+                            <input placeholder="" id="LastName" name="LastName" type="text" class="form-control validate">
+                        </div>
                         <div class="form-group">
                             <label for="name">Account Name</label>
                             <input placeholder="Vulputate Eleifend Nulla" id="name" name="name" type="text" class="form-control validate">
@@ -62,7 +75,7 @@
                             <label for="phone">Phone</label>
                             <input placeholder="010-030-0440" id="phone" name="phone" type="tel" class="form-control validate">
                         </div>
-                        <div class="row">
+                        <div class="row mb-3">
                             <div class="col-12 col-sm-4">
                                 <button type="submit" class="btn btn-primary">
                                     Update
