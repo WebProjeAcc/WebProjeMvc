@@ -44,7 +44,7 @@ namespace WebProje.Models
 
             _userManager.CreateAsync(new Users
             {
-                UserName = "admin@gmail.com",
+                UserName = "b181210092@sakarya.edu.tr",
                 Email = "admin@gmail.com",
                 Name = "Furkan",
                 LastName = "Sezgin",

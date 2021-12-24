@@ -818,7 +818,6 @@ C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Home\Accounts.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Home\Barkod.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Home\Kasa.cshtml.g.cs
@@ -839,7 +838,6 @@ C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.genruntimeconfig.cache
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Delete.cshtml.g.cs
-C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Categoryies\Create.cshtml.g.cs
@@ -847,3 +845,5 @@ C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Categoryies\Details.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Categoryies\Edit.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Categoryies\Index.cshtml.g.cs
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Barkod.cshtml.g.cs
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Index.cshtml.g.cs

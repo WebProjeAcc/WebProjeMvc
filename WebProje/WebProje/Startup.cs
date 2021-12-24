@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Identity;
 using WebProje.Data;
 using WebProje.Models;
 using Microsoft.EntityFrameworkCore;
+using WebProje.Areas.Identity.Data;
 
 namespace WebProje
 {
@@ -45,6 +46,7 @@ namespace WebProje
             services.AddControllersWithViews();
 
             services.AddScoped<IDbInitializer, DbInitializer>();
+            services.AddDbContext<DatabaseContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

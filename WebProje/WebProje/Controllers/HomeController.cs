@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using WebProje.Areas.Identity.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace WebProje.Controllers
 {
@@ -14,6 +16,7 @@ namespace WebProje.Controllers
 
     public class HomeController : Controller
     {
+
         private readonly ILogger<HomeController> _logger;
        
         public HomeController(ILogger<HomeController> logger)
@@ -29,7 +32,6 @@ namespace WebProje.Controllers
      
         public IActionResult Barkod()
         {
-
             return View();
         }
       
@@ -38,11 +40,7 @@ namespace WebProje.Controllers
 
             return View();
         }
-        public IActionResult Products()
-        {
-
-            return View();
-        }
+      
         public IActionResult Privacy()
         {
             return View();
