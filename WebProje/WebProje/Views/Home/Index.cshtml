@@ -1,13 +1,29 @@
-﻿@{
+﻿@model IEnumerable<WebProje.Models.Product>
+
+@{
     ViewData["Title"] = "Home Page";
 
 }
 
-<!-- row -->
-<div class="container-fluid">
-    <div class="row tm-content-row tm-mt-big">
-        <a href="/Home/Barkod" >
-            
+<!-- row --><body class="bg02">
+
+    <div class="container-fluid">
+
+        @foreach (var item in Model)
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text"> @item.ProductPrice TL</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        }
+</body>
+@* <div class="row tm-content-row tm-mt-big">
+        <a href="/Home/Barkod">
+
             <div class="tm-col tm-col-big tm-block ">
                 <div class=" tm-block bg-secondary   d-flex justify-content-center align-items-center   ">
 
@@ -44,4 +60,5 @@
         </a>
 
 
-    </div>
+    </div>*@
+</div>

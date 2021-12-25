@@ -847,3 +847,5 @@ C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Categoryies\Index.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Products\Barkod.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Index.cshtml.g.cs
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Delete.cshtml.g.cs
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Logout.cshtml.g.cs

@@ -9,38 +9,33 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebProje.Areas.Identity.Data;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using WebProje.Data;
 
 namespace WebProje.Controllers
 {
-    //[Authorize]  sonradan aç bunu unutma
+   
 
     public class HomeController : Controller
     {
-
+        private readonly DatabaseContext _context;
         private readonly ILogger<HomeController> _logger;
        
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, DatabaseContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+          var Product=  _context.Products.ToList();
+            return View(Product);
         }
 
      
-        public IActionResult Barkod()
-        {
-            return View();
-        }
+       
       
-        public IActionResult Kasa()
-        {
-
-            return View();
-        }
-      
+        
         public IActionResult Privacy()
         {
             return View();

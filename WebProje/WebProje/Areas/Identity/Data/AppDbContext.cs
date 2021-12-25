@@ -24,7 +24,6 @@ namespace WebProje.Data
             // Add your customizations after calling base.OnModelCreating(builder);
           
         }
-        public DbSet<Product> Products { get; set; }
-        public DbSet<Categoryies> Categoryies { get; set; }
+      
     }
 }

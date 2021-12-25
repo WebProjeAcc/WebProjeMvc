@@ -14,6 +14,8 @@ using WebProje.Data;
 using WebProje.Models;
 using Microsoft.EntityFrameworkCore;
 using WebProje.Areas.Identity.Data;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace WebProje
 {
@@ -30,6 +32,8 @@ namespace WebProje
         public void ConfigureServices(IServiceCollection services)
 
         {
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddMvc().AddViewLocalization(Microsoft.AspNetCore.Mvc.Razor.LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization();
             services.AddDbContext<AppDbContext>(options =>
                    options.UseSqlServer(
                        Configuration.GetConnectionString("DbContextConnection")));
@@ -47,6 +51,21 @@ namespace WebProje
 
             services.AddScoped<IDbInitializer, DbInitializer>();
             services.AddDbContext<DatabaseContext>();
+            services.Configure<RequestLocalizationOptions>(
+           options =>
+           {
+               var supportedCultures = new List<CultureInfo>
+                   {
+                        new CultureInfo("en-US"),
+                        new CultureInfo("tr-TR")
+                   };
+
+               options.DefaultRequestCulture = new RequestCulture(culture: "tr-TR", uiCulture: "tr-TR");
+               options.SupportedCultures = supportedCultures;
+               options.SupportedUICultures = supportedCultures;
+
+               options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+           });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

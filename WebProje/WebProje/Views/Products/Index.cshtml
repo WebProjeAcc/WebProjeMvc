@@ -65,9 +65,19 @@
                                 <h2 class="tm-block-title d-inline-block m-4">Ürünler</h2>
 
                             </div>
-                            <div class="col-md-4 col-sm-12 text-right">
-                                <a href="/Products/Create" class="btn btn-small btn-primary m-4">Yeni Ürün Ekle</a>
-                            </div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+
+                                @if (User.IsInRole("Admin"))
+                                {
+
+                                    <div class="col-md-4 col-sm-12 text-right">
+                                        <a href="/Products/Create" class="btn btn-small btn-primary m-4">Yeni Ürün Ekle</a>
+                                    </div>
+                                }
+
+                            }
+
                         </div>
                         <div class="table-responsive">
                             <table class="table table-hover table-striped tm-table-striped-even mt-3">
@@ -76,20 +86,41 @@
                                         <th scope="col">Ürün İsmi</th>
                                         <th scope="col" class="text-center">Ürün Fiyatı</th>
                                         <th scope="col" class="text-center">Ürün Stok</th>
-                                        <th scope="col">&nbsp;</th>
+
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+
+                                            @if (User.IsInRole("Admin"))
+                                            {
+
+                                                <th scope="col">&nbsp;</th>
+                                            }
+
+                                        }
+
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     @foreach (var item in Model)
                                     {
-                                        <tr>
-                                            <td class="tm-product-name"> @Html.DisplayFor(modelItem => item.ProductName)</td>
-                                            <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductPrice)</td>
-                                            <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductStock)</td>
+                                    <tr>
+                                        <td class="tm-product-name"> @Html.DisplayFor(modelItem => item.ProductName)</td>
+                                        <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductPrice)</td>
+                                        <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductStock)</td>
 
-                                            <td><a href="/Products/Delete/@item.ProductID" class="fas fa-trash-alt tm-trash-icon"></a></td>
-                                        </tr>
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+
+                                            @if (User.IsInRole("Admin"))
+                                            {
+
+                                                <td><a href="/Products/Delete/@item.ProductID" class="fas fa-trash-alt tm-trash-icon"></a></td>
+                                            }
+
+                                        }
+
+                                    </tr>
                                     }
                                 </tbody>
                             </table>

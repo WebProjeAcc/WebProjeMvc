@@ -34,21 +34,42 @@
     </table>
 
 *@
+<body class=" bg02">
 
-<div class="bg-white">
-    <h2 class="tm-block-title d-inline-block">Ürün Kategorileri</h2>
-    <table class="table table-hover table-striped mt-3">
-        <tbody>
-            @foreach (var item in Model)
+    <div class="bg-white mt-2">
+        <h2 class="tm-block-title d-inline-block">Ürün Kategorileri</h2>
+        <table class="table table-hover table-striped mt-3">
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr class="">
+                        <td>@item.CategoryName</td>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+
+                            @if (User.IsInRole("Admin"))
+                            {
+
+                                <td><a href="/Categoryies/Delete/@item.CategoryID" class="fas fa-trash-alt tm-trash-icon"></a></td>
+                            }
+
+                        }
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+        @if (User.Identity.IsAuthenticated)
+        {
+
+            @if (User.IsInRole("Admin"))
             {
-                <tr>
-                    <td>@item.CategoryName</td>
-                    <td><a href="/Categoryies/Delete/@item.CategoryID" class="fas fa-trash-alt tm-trash-icon"></a></td>
-                </tr>
-            }
-        </tbody>
-    </table>
 
-    <a asp-action="Create">Yeni Kategori Oluştur</a>
-</div>
-                
+                <a asp-action="Create">Yeni Kategori Oluştur</a>
+            }
+
+        }
+
+    </div>
+
+</body>

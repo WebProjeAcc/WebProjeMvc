@@ -5,102 +5,105 @@
 @inject UserManager<Users> UserManager
 
 
-@if (SignInManager.IsSignedIn(User))
-{
-    <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Merhabalar @UserManager.GetUserName(User)!</a>
-    </li>
-    <li class="nav-item">
-        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
-        </form>
-    </li>
-}
-<div class="row tm-content-row tm-mt-big">
-    <div class="tm-col tm-col-big">
-        <div class="bg-white tm-block">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="tm-block-title d-inline-block">Accounts</h2>
-                </div>
-            </div>
-            <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                @foreach (var item in Model)
-                {
-                    <li class="tm-list-group-item">
-                        @Html.DisplayFor(modelItem => item.Name)
-                    </li>
-                }
-               
 
+    <div class="row tm-content-row tm-mt-big">
+        @if (User.Identity.IsAuthenticated)
+        {
 
-            </ol>
-        </div>
-    </div>
-    <div class="tm-col tm-col-big">
-        <div class="bg-white tm-block">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="tm-block-title">Edit Account</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <form action="" class="tm-signup-form">
-                        <div class="form-group">
-                            <label for="Name">Name</label>
-                            <input placeholder=@UserManager.GetUserName(User) id="Name" name="Name"  value=@UserManager.GetUserName(User) type="text" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="LastName">LastName</label>
-                            <input placeholder="" id="LastName" name="LastName" type="text" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="name">Account Name</label>
-                            <input placeholder="Vulputate Eleifend Nulla" id="name" name="name" type="text" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Account Email</label>
-                            <input placeholder="vulputate@eleifend.co" id="email" name="email" type="email" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input placeholder="******" id="password" name="password" type="password" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="password2">Re-enter Password</label>
-                            <input placeholder="******" id="password2" name="password2" type="password" class="form-control validate">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input placeholder="010-030-0440" id="phone" name="phone" type="tel" class="form-control validate">
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-12 col-sm-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Update
-                                </button>
-                            </div>
-                            <div class="col-12 col-sm-8 tm-btn-right">
-                                <button type="submit" class="btn btn-danger">
-                                    Delete Account
-                                </button>
+            @if (User.IsInRole("Admin"))
+            {
+
+                <div class="tm-col tm-col-big">
+
+                    <div class="bg-white tm-block">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 class="tm-block-title d-inline-block">Accounts</h2>
                             </div>
                         </div>
+                        <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
+                            @foreach (var item in Model)
+                            {
+                                <li class="tm-list-group-item">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </li>
+                            }
 
-                    </form>
+
+
+                        </ol>
+                    </div>
+                </div>
+            }
+
+        }
+
+        <div class="tm-col tm-col-big">
+            <div class="bg-white tm-block">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-block-title">Edit Account</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form asp-action="Update" class="tm-signup-form">
+                            <div class="form-group">
+                                <label for="Name">Name</label>
+                                <input placeholder=@ViewBag.Name id="Name" name="Name" value=@ViewBag.Name type="text" class="form-control validate">
+                            </div>
+                            <div class="form-group">
+                                <label for="LastName">LastName</label>
+                                <input placeholder=@ViewBag.LastName id="LastName" name="LastName" value=@ViewBag.LastName type="text" class="form-control validate">
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Account Name</label>
+                                <input placeholder=@UserManager.GetUserName(User) id="name" name="name" value=@UserManager.GetUserName(User) type="text" class="form-control validate">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input placeholder="******" id="password" name="password" type="password" class="form-control validate">
+                            </div>
+                            <div class="form-group">
+                                <label for="password2">Re-enter Password</label>
+                                <input placeholder="******" id="password2" name="password2" type="password" class="form-control validate">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input placeholder=@ViewBag.Phone id="phone" name="phone" value=@ViewBag.Phone type="tel" class="form-control validate">
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 col-sm-4">
+                                    <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
+                                        Delete Account
+                                    </a>
+                                    <button type="submit" value="Save" class="btn btn-primary">
+                                        Update
+                                    </button>
+                                </div>
+                                <div class="col-12 col-sm-8 tm-btn-right">
+
+                                    <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
+                                        Delete Account
+                                    </a>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tm-col tm-col-small">
+            <div class="bg-white tm-block">
+                <h2 class="tm-block-title">Profile Image</h2>
+                <img src="img/profile-image.png" alt="Profile Image" class="img-fluid">
+                <div class="custom-file mt-3 mb-3">
+                    <input id="fileInput" type="file" style="display:none;" />
+                    <input type="button" class="btn btn-primary d-block mx-xl-auto" value="Upload New..." onclick="document.getElementById('fileInput').click();" />
                 </div>
             </div>
         </div>
     </div>
-    <div class="tm-col tm-col-small">
-        <div class="bg-white tm-block">
-            <h2 class="tm-block-title">Profile Image</h2>
-            <img src="img/profile-image.png" alt="Profile Image" class="img-fluid">
-            <div class="custom-file mt-3 mb-3">
-                <input id="fileInput" type="file" style="display:none;" />
-                <input type="button" class="btn btn-primary d-block mx-xl-auto" value="Upload New..." onclick="document.getElementById('fileInput').click();" />
-            </div>
-        </div>
-    </div>
-</div>
+

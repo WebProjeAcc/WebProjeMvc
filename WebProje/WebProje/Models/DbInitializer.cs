@@ -49,7 +49,8 @@ namespace WebProje.Models
                 Name = "Furkan",
                 LastName = "Sezgin",
                 EmailConfirmed = true,
-                PhoneNumber = "1112223333"
+                Phone= "1112223333",
+               
             }, "Admin123*").GetAwaiter().GetResult();
 
 
