@@ -36,6 +36,7 @@ namespace WebProje.Controllers
 
 
             var LogİnUser = _context.Users.Where(i => i.Id == userId).FirstOrDefault();
+            
            
             ViewBag.UserName = LogİnUser.UserName.ToString();
             ViewBag.Name = LogİnUser.Name.ToString();
@@ -72,7 +73,20 @@ namespace WebProje.Controllers
                 return NotFound();
             }
             //var LogİnUser = _context.Users.Where(i => i.Id == user.Id).FirstOrDefault();
-            Users newuser = _context.Users.Find(user.Name.ToString());
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+            var LogİnUser = _context.Users.Where(i => i.Id == userId).FirstOrDefault();
+
+
+            ViewBag.UserName = LogİnUser.UserName.ToString();
+            ViewBag.Name = LogİnUser.Name.ToString();
+            ViewBag.LastName = LogİnUser.LastName.ToString();
+            ViewBag.Phone = LogİnUser.Phone.ToString();
+
+
+
+            Users newuser = _context.Users.Find(user.Id.ToString());
             newuser.Name = user.Name;
             newuser.LastName = user.LastName;
             newuser.UserName = user.UserName;

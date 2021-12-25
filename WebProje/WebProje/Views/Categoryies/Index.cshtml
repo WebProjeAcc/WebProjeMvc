@@ -37,7 +37,7 @@
 <body class=" bg02">
 
     <div class="bg-white mt-2">
-        <h2 class="tm-block-title d-inline-block">Ürün Kategorileri</h2>
+        <h2 class="tm-block-title d-inline-block">@lang["Product Categories"]</h2>
         <table class="table table-hover table-striped mt-3">
             <tbody>
                 @foreach (var item in Model)
@@ -65,7 +65,7 @@
             @if (User.IsInRole("Admin"))
             {
 
-                <a asp-action="Create">Yeni Kategori Oluştur</a>
+                <a asp-action="Create">@lang["Create a new category"]</a>
             }
 
         }

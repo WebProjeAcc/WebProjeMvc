@@ -42,35 +42,35 @@
             <div class="bg-white tm-block">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="tm-block-title">Edit Account</h2>
+                        <h2 class="tm-block-title">@lang["Edit Account"]</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
                         <form asp-action="Update" class="tm-signup-form">
                             <div class="form-group">
-                                <label for="Name">Name</label>
+                                <label for="Name">@lang["Name"]</label>
                                 <input placeholder=@ViewBag.Name id="Name" name="Name" value=@ViewBag.Name type="text" class="form-control validate">
                             </div>
                             <div class="form-group">
-                                <label for="LastName">LastName</label>
+                                <label for="LastName">@lang["LastName"]</label>
                                 <input placeholder=@ViewBag.LastName id="LastName" name="LastName" value=@ViewBag.LastName type="text" class="form-control validate">
                             </div>
                             <div class="form-group">
-                                <label for="name">Account Name</label>
+                                <label for="name">@lang["Account Name"]</label>
                                 <input placeholder=@UserManager.GetUserName(User) id="name" name="name" value=@UserManager.GetUserName(User) type="text" class="form-control validate">
                             </div>
 
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">@lang["Password"]</label>
                                 <input placeholder="******" id="password" name="password" type="password" class="form-control validate">
                             </div>
                             <div class="form-group">
-                                <label for="password2">Re-enter Password</label>
+                                <label for="password2">@lang["Re-enter Password"]</label>
                                 <input placeholder="******" id="password2" name="password2" type="password" class="form-control validate">
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone</label>
+                                <label for="phone">@lang["Phone Number"]</label>
                                 <input placeholder=@ViewBag.Phone id="phone" name="phone" value=@ViewBag.Phone type="tel" class="form-control validate">
                             </div>
                             <div class="row mb-3">
@@ -79,13 +79,13 @@
                                         Delete Account
                                     </a>
                                     <button type="submit" value="Save" class="btn btn-primary">
-                                        Update
+                                        @lang["Update"]
                                     </button>
                                 </div>
                                 <div class="col-12 col-sm-8 tm-btn-right">
 
                                     <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
-                                        Delete Account
+                                        @lang["Delete Account"]
                                     </a>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="tm-col tm-col-small">
             <div class="bg-white tm-block">
-                <h2 class="tm-block-title">Profile Image</h2>
+                <h2 class="tm-block-title">@lang["Profile Image"]</h2>
                 <img src="img/profile-image.png" alt="Profile Image" class="img-fluid">
                 <div class="custom-file mt-3 mb-3">
                     <input id="fileInput" type="file" style="display:none;" />

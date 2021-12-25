@@ -849,3 +849,14 @@ C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Index.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Delete.cshtml.g.cs
 C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\Razor\Views\Account\Logout.cshtml.g.cs
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.csproj.GenerateResource.cache
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\bin\Debug\net5.0\en\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.Controllers.HomeController.en.resources
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\en\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\bin\Debug\net5.0\en-US\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\bin\Debug\net5.0\tr-TR\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\en-US\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\tr-TR\WebProje.resources.dll
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.Resources.lang.resources
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.Resources.lang.en-US.resources
+C:\Users\Furkan\Documents\GitHub\WebProjeMvc\WebProje\WebProje\obj\Debug\net5.0\WebProje.Resources.lang.tr-TR.resources

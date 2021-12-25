@@ -17,7 +17,7 @@ namespace WebProje.Areas.Identity
         {
             builder.ConfigureServices((context, services) =>
             {
-               
+             
 
 
 

@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+@inject IStringLocalizer<lang> lang
+
+
 <html lang="en">
 
 <head>
@@ -44,22 +47,23 @@
 
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
+
                                 <li class="nav-item">
                                     <a class="nav-link active" href="/Home/Index">
-                                        Dashboard
+                                        @lang["Home"]
                                         <span class="sr-only">(current)</span>
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/Products/Index"> Products</a>
+                                    <a class="nav-link" href="/Products/Index"> @lang["Product"]</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/Account/Index">Accounts</a>
+                                    <a class="nav-link" href="/Account/Index">@lang["Accounts"]</a>
                                 </li>
 
 
-                              
+
 
 
 
@@ -69,6 +73,17 @@
 
 
                         </div>
+                        <div class="header__top__right__language">
+                            @*<img src="/lib/bootstrap/dist/img/language.png" alt="">*@
+                            <div>Diller</div>
+                            <span class="arrow_carrot-down"></span>
+                            <ul>
+                                <li><a   asp-route-culture="tr-TR">Türkçe</a></li>
+                                <li><a   asp-route-culture="en-US">English</a></li>
+
+                            </ul>
+                        </div>
+
                     </nav>
                 </div>
             </div>

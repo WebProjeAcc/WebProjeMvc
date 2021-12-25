@@ -6,12 +6,12 @@
 }
 
 <!-- row --><body class="bg02">
-
+               
     <div class="container-fluid">
 
         @foreach (var item in Model)
         {
-            <div class="card" style="width: 18rem;">
+            <div class="card p-2 m-2 d-inline-block d-grid" style="width: 20rem;">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">@item.ProductName</h5>
@@ -20,6 +20,7 @@
                 </div>
             </div>
         }
+    </div>
 </body>
 @* <div class="row tm-content-row tm-mt-big">
         <a href="/Home/Barkod">
