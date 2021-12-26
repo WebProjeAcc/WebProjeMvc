@@ -19,13 +19,14 @@
             {
                    <img class="card-img-top" src="/images/@item.ImageUrl" alt="Card image cap">
             }
-
             <div class="card-body">
                 <h5 class="card-title">@item.ProductName</h5>
                 <h7 class="card-text"> @item.ProductPrice TL</h7>
+                <p class="card-text">@item.ProductStock</p>
                 <p>@item.Description</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="/Products/Satis/@item.ProductID" class="btn btn-primary">@lang["Buy"]</a>
             </div>
+
         </div>
         }
     </div>

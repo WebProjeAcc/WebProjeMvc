@@ -57,20 +57,26 @@
                                     @foreach (var item in Model)
                                     {
                                     <tr>
-                                        <td class="tm-product-name"><a href="/Products/Edit/@item.ProductID"> @Html.DisplayFor(modelItem => item.ProductName)</a></td>
+                                        @if (User.Identity.IsAuthenticated)
+                                        {
+
+                                            @if (User.IsInRole("Admin"))
+                                             {
+                                                <td class="tm-product-name"><a href="/Products/Edit/@item.ProductID"> @Html.DisplayFor(modelItem => item.ProductName)</a></td>
+                                                
+                                             }
+                                         }
+                                        <td class="tm-product-name">@Html.DisplayFor(modelItem => item.ProductName)</td>
                                         <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductPrice)</td>
                                         <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductStock)</td>
 
                                         @if (User.Identity.IsAuthenticated)
                                         {
 
-                                            @if (User.IsInRole("Admin"))
-                                            {
+                                    @if (User.IsInRole("Admin"))
+                                    {
 
-                                                <td><a href="/Products/Delete/@item.ProductID" class="fas fa-trash-alt tm-trash-icon"></a></td>
-                                            }
-
-                                        }
+                                    <td><a href="/Products/Delete/@item.ProductID" class="fas fa-trash-alt tm-trash-icon"></a></td>}}
 
                                     </tr>
                                     }

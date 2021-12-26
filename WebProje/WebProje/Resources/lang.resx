@@ -135,6 +135,9 @@
   <data name="Bread" xml:space="preserve">
     <value>Bread</value>
   </data>
+  <data name="Buy" xml:space="preserve">
+    <value>Satış</value>
+  </data>
   <data name="Cake" xml:space="preserve">
     <value>Cake</value>
   </data>
@@ -227,6 +230,9 @@
   </data>
   <data name="RememberMe" xml:space="preserve">
     <value>RememberMe</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>

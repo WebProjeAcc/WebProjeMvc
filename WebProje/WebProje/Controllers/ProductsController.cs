@@ -163,6 +163,69 @@ namespace WebProje.Controllers
             return View(product);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Satis(int id, [Bind("ProductID,ProductName,ProductPrice,ProductStock,CategoryID")] Product productView)
+        {
+
+            Product p1 = new Product();
+            if (id != productView.ProductID)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                p1 = _context.Products.Find(productView.ProductID);
+                p1.ProductStock = p1.ProductStock - productView.ProductStock;
+                try
+                {
+                    _context.Update(p1);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ProductExists(p1.ProductID))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        // GET: Products/Edit/5
+        public async Task<IActionResult> Satis(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            List<SelectListItem> values = (from x in _context.Categoryies.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+
+                                           }).ToList();
+            ViewData["CategoryID"] = new SelectList(_context.Categoryies, "CategoryID", "CategoryID");
+            ViewBag.v1 = values;
+
+            ViewData["CategoryID"] = new SelectList(_context.Categoryies, "CategoryID", "CategoryID", product.CategoryID);
+            return View(product);
+        }
+
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

@@ -8041,24 +8041,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Furkan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ethem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Furkan\\Documents\\GitHub\\WebProjeMvc\\WebProje\\WebProje\\WebProje.csproj",
+      "projectUniqueName": "B:\\bil müh b grubu döküman\\3. Sınıf\\1. Dönem\\Web\\WebProjeMvc\\WebProje\\WebProje\\WebProje.csproj",
       "projectName": "WebProje",
-      "projectPath": "C:\\Users\\Furkan\\Documents\\GitHub\\WebProjeMvc\\WebProje\\WebProje\\WebProje.csproj",
-      "packagesPath": "C:\\Users\\Furkan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Furkan\\Documents\\GitHub\\WebProjeMvc\\WebProje\\WebProje\\obj\\",
+      "projectPath": "B:\\bil müh b grubu döküman\\3. Sınıf\\1. Dönem\\Web\\WebProjeMvc\\WebProje\\WebProje\\WebProje.csproj",
+      "packagesPath": "C:\\Users\\ethem\\.nuget\\packages\\",
+      "outputPath": "B:\\bil müh b grubu döküman\\3. Sınıf\\1. Dönem\\Web\\WebProjeMvc\\WebProje\\WebProje\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Furkan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ethem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8129,7 +8124,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
