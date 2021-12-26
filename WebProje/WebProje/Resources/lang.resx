@@ -129,6 +129,15 @@
   <data name="Back to List" xml:space="preserve">
     <value>Back to List</value>
   </data>
+  <data name="Bagle" xml:space="preserve">
+    <value>Bagle</value>
+  </data>
+  <data name="Bread" xml:space="preserve">
+    <value>Bread</value>
+  </data>
+  <data name="Cake" xml:space="preserve">
+    <value>Cake</value>
+  </data>
   <data name="Categories" xml:space="preserve">
     <value>Categories</value>
   </data>
@@ -152,6 +161,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>LastName</value>

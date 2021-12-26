@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -65,8 +66,30 @@ namespace WebProje.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductID,ProductName,ProductPrice,ProductStock,CategoryID")] Product product)
+        public async Task<IActionResult> Create([Bind("ProductID,ProductName,ProductPrice,ImageUrl,Description,ProductStock,CategoryID")] AddProduct p)
         {
+            Product product = new Product();
+            if(p.ImageUrl != null)
+            {
+                var extension = Path.GetExtension(p.ImageUrl.FileName);
+                var newName = Guid.NewGuid() + extension;
+                var location = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/images/", newName);
+                var stream = new FileStream(location, FileMode.Create);
+                p.ImageUrl.CopyTo(stream);
+                product.ImageUrl = newName;
+            }
+            
+            product.ProductName = p.ProductName;
+            product.ProductPrice = p.ProductPrice;
+            product.ProductStock = p.ProductStock;
+            product.ProductID = p.ProductID;
+            product.Description = p.Description;
+            product.CategoryID = p.CategoryID;
+
+            
+
+
+
             if (ModelState.IsValid)
             {
                 _context.Add(product);
@@ -90,6 +113,16 @@ namespace WebProje.Controllers
             {
                 return NotFound();
             }
+            List<SelectListItem> values = (from x in _context.Categoryies.ToList()
+                                           select new SelectListItem
+                                           {
+                                               Text = x.CategoryName,
+                                               Value = x.CategoryID.ToString()
+
+                                           }).ToList();
+            ViewData["CategoryID"] = new SelectList(_context.Categoryies, "CategoryID", "CategoryID");
+            ViewBag.v1 = values;
+
             ViewData["CategoryID"] = new SelectList(_context.Categoryies, "CategoryID", "CategoryID", product.CategoryID);
             return View(product);
         }

@@ -11,14 +11,22 @@
 
         @foreach (var item in Model)
         {
-            <div class="card p-2 m-2 d-inline-block d-grid" style="width: 20rem;">
-                <img class="card-img-top" src="..." alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">@item.ProductName</h5>
-                    <p class="card-text"> @item.ProductPrice TL</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        <div class="card p-2 m-2 d-inline-block d-grid" style="width: 20rem;">
+            @if (item.ImageUrl == null)
+            {
+                  <img class="card-img-top" src="/images/ekmek.png" alt="Card image cap">}
+            else
+            {
+                   <img class="card-img-top" src="/images/@item.ImageUrl" alt="Card image cap">
+            }
+
+            <div class="card-body">
+                <h5 class="card-title">@item.ProductName</h5>
+                <h7 class="card-text"> @item.ProductPrice TL</h7>
+                <p>@item.Description</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+        </div>
         }
     </div>
 </body>

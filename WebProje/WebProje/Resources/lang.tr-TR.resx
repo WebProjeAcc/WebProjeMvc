@@ -129,6 +129,15 @@
   <data name="Back to List" xml:space="preserve">
     <value>Listeye Dön</value>
   </data>
+  <data name="Bagle" xml:space="preserve">
+    <value>Simit</value>
+  </data>
+  <data name="Bread" xml:space="preserve">
+    <value>Ekmek</value>
+  </data>
+  <data name="Cake" xml:space="preserve">
+    <value>Kek</value>
+  </data>
   <data name="Categories" xml:space="preserve">
     <value>Kategoriler</value>
   </data>
@@ -152,6 +161,9 @@
   </data>
   <data name="Home" xml:space="preserve">
     <value>Anasayfa</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Dil</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Soyisim</value>

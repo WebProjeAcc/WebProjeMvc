@@ -57,7 +57,7 @@
                                     @foreach (var item in Model)
                                     {
                                     <tr>
-                                        <td class="tm-product-name"> @Html.DisplayFor(modelItem => item.ProductName)</td>
+                                        <td class="tm-product-name"><a href="/Products/Edit/@item.ProductID"> @Html.DisplayFor(modelItem => item.ProductName)</a></td>
                                         <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductPrice)</td>
                                         <td class="text-center"> @Html.DisplayFor(modelItem => item.ProductStock)</td>
 
