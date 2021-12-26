@@ -4,106 +4,110 @@
 @inject SignInManager<Users> SignInManager
 @inject UserManager<Users> UserManager
 
+@{
 
+    Users user;
+    user = ViewBag.user;
+}
 
-    <div class="row tm-content-row tm-mt-big">
-        @if (User.Identity.IsAuthenticated)
+<div class="row tm-content-row tm-mt-big">
+    @if (User.Identity.IsAuthenticated)
+    {
+
+        @if (User.IsInRole("Admin"))
         {
 
-            @if (User.IsInRole("Admin"))
-            {
+            <div class="tm-col tm-col-big">
 
-                <div class="tm-col tm-col-big">
-
-                    <div class="bg-white tm-block">
-                        <div class="row">
-                            <div class="col-12">
-                                <h2 class="tm-block-title d-inline-block">Accounts</h2>
-                            </div>
+                <div class="bg-white tm-block">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="tm-block-title d-inline-block">Accounts</h2>
                         </div>
-                        <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
-                            @foreach (var item in Model)
-                            {
-                                <li class="tm-list-group-item">
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </li>
-                            }
-
-
-
-                        </ol>
                     </div>
-                </div>
-            }
+                    <ol class="tm-list-group tm-list-group-alternate-color tm-list-group-pad-big">
+                        @foreach (var item in Model)
+                        {
+                            <li class="tm-list-group-item">
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </li>
+                        }
 
-        }
 
-        <div class="tm-col tm-col-big">
-            <div class="bg-white tm-block">
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="tm-block-title">@lang["Edit Account"]</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <form asp-action="Update" class="tm-signup-form">
-                            <div class="form-group">
-                                <label for="Name">@lang["Name"]</label>
-                                <input placeholder=@ViewBag.Name id="Name" name="Name" value=@ViewBag.Name type="text" class="form-control validate">
-                            </div>
-                            <div class="form-group">
-                                <label for="LastName">@lang["LastName"]</label>
-                                <input placeholder=@ViewBag.LastName id="LastName" name="LastName" value=@ViewBag.LastName type="text" class="form-control validate">
-                            </div>
-                            <div class="form-group">
-                                <label for="name">@lang["Account Name"]</label>
-                                <input placeholder=@UserManager.GetUserName(User) id="name" name="name" value=@UserManager.GetUserName(User) type="text" class="form-control validate">
-                            </div>
 
-                            <div class="form-group">
-                                <label for="password">@lang["Password"]</label>
-                                <input placeholder="******" id="password" name="password" type="password" class="form-control validate">
-                            </div>
-                            <div class="form-group">
-                                <label for="password2">@lang["Re-enter Password"]</label>
-                                <input placeholder="******" id="password2" name="password2" type="password" class="form-control validate">
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">@lang["Phone Number"]</label>
-                                <input placeholder=@ViewBag.Phone id="phone" name="phone" value=@ViewBag.Phone type="tel" class="form-control validate">
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12 col-sm-4">
-                                    <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
-                                        Delete Account
-                                    </a>
-                                    <button type="submit" value="Save" class="btn btn-primary">
-                                        @lang["Update"]
-                                    </button>
-                                </div>
-                                <div class="col-12 col-sm-8 tm-btn-right">
-
-                                    <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
-                                        @lang["Delete Account"]
-                                    </a>
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
+                    </ol>
                 </div>
             </div>
-        </div>
-        <div class="tm-col tm-col-small">
-            <div class="bg-white tm-block">
-                <h2 class="tm-block-title">@lang["Profile Image"]</h2>
-                <img src="img/profile-image.png" alt="Profile Image" class="img-fluid">
-                <div class="custom-file mt-3 mb-3">
-                    <input id="fileInput" type="file" style="display:none;" />
-                    <input type="button" class="btn btn-primary d-block mx-xl-auto" value="Upload New..." onclick="document.getElementById('fileInput').click();" />
+        }
+
+    }
+
+    <div class="tm-col tm-col-big">
+        <div class="bg-white tm-block">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="tm-block-title">@lang["Edit Account"]</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form asp-action="Update" class="tm-signup-form">
+                        <div class="form-group">  <input type="hidden" id="FormStatus" value="@user.Id" class="form-control"> </div>
+
+                        <div class="form-group">
+                            <label for="Name">@lang["Name"]</label>
+                            <input placeholder=@user.Name id="Name" name="Name" value=@user.Name type="text" class="form-control validate">
+                        </div>
+                        <div class="form-group">
+                            <label for="LastName">@lang["LastName"]</label>
+                            <input placeholder=@user.LastName id="LastName" name="LastName" value=@user.LastName type="text" class="form-control validate">
+                        </div>
+                        <div class="form-group">
+
+
+                            <input placeholder=@user.UserName id="name" name="name" value=@user.UserName type="hidden" class="form-control validate">
+                        </div>
+                        <div class="form-group">
+
+
+                            <input placeholder=@user.PasswordHash id="name" name="name" value=@user.PasswordHash type="hidden" class="form-control validate">
+                        </div>
+                      
+                        <div class="form-group">
+                            <label for="phone">@lang["Phone Number"]</label>
+                            <input placeholder=@user.Phone id="phone" name="phone" value=@user.Phone type="tel" class="form-control validate">
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-12 col-sm-4">
+                                <a href="/Account/Delete/@user.Id" class="btn btn-danger">
+                                    Delete Account
+                                </a>
+                                <button type="submit" value="Save" class="btn btn-primary">
+                                    @lang["Update"]
+                                </button>
+                            </div>
+                            @*<div class="col-12 col-sm-8 tm-btn-right">
+
+                <a href="/Account/Delete/@UserManager.GetUserId(User)" class="btn btn-danger">
+                    @lang["Delete Account"]
+                </a>
+            </div>*@
+                        </div>
+
+                    </form>
                 </div>
             </div>
         </div>
     </div>
+    <div class="tm-col tm-col-small">
+        <div class="bg-white tm-block">
+            <h2 class="tm-block-title">@lang["Profile Image"]</h2>
+            <img src="img/profile-image.png" alt="Profile Image" class="img-fluid">
+            <div class="custom-file mt-3 mb-3">
+                <input id="fileInput" type="file" style="display:none;" />
+                <input type="button" class="btn btn-primary d-block mx-xl-auto" value="Upload New..." onclick="document.getElementById('fileInput').click();" />
+            </div>
+        </div>
+    </div>
+</div>
 

@@ -36,12 +36,16 @@ namespace WebProje.Controllers
 
 
             var LogİnUser = _context.Users.Where(i => i.Id == userId).FirstOrDefault();
-            
-           
+
+            Users user;
+            user = LogİnUser;
+
+            ViewBag.user = user;
+           /*
             ViewBag.UserName = LogİnUser.UserName.ToString();
             ViewBag.Name = LogİnUser.Name.ToString();
             ViewBag.LastName = LogİnUser.LastName.ToString();
-            ViewBag.Phone = LogİnUser.Phone.ToString();
+            ViewBag.Phone = LogİnUser.Phone.ToString();*/
             List<Users> Kullanicilar = _context.Users.ToList();
             return View(Kullanicilar);
         }
@@ -62,7 +66,7 @@ namespace WebProje.Controllers
             var user = _context.Users.Find(id);
             _context.Users.Remove(user);
             _context.SaveChanges();
-         
+           
             return RedirectToAction("Logout","Account");
         }
         [HttpPost]
@@ -72,24 +76,20 @@ namespace WebProje.Controllers
             {
                 return NotFound();
             }
-            //var LogİnUser = _context.Users.Where(i => i.Id == user.Id).FirstOrDefault();
+           
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
             var LogİnUser = _context.Users.Where(i => i.Id == userId).FirstOrDefault();
 
 
-            ViewBag.UserName = LogİnUser.UserName.ToString();
-            ViewBag.Name = LogİnUser.Name.ToString();
-            ViewBag.LastName = LogİnUser.LastName.ToString();
-            ViewBag.Phone = LogİnUser.Phone.ToString();
 
 
 
-            Users newuser = _context.Users.Find(user.Id.ToString());
+            Users newuser = _context.Users.Find(LogİnUser.Id.ToString());
             newuser.Name = user.Name;
             newuser.LastName = user.LastName;
-            newuser.UserName = user.UserName;
+           
             newuser.Phone = user.Phone;
 
             _context.Users.Update(newuser);
