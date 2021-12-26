@@ -41,11 +41,11 @@ namespace WebProje.Controllers
             user = LogİnUser;
 
             ViewBag.user = user;
-           /*
-            ViewBag.UserName = LogİnUser.UserName.ToString();
-            ViewBag.Name = LogİnUser.Name.ToString();
-            ViewBag.LastName = LogİnUser.LastName.ToString();
-            ViewBag.Phone = LogİnUser.Phone.ToString();*/
+            /*
+             ViewBag.UserName = LogİnUser.UserName.ToString();
+             ViewBag.Name = LogİnUser.Name.ToString();
+             ViewBag.LastName = LogİnUser.LastName.ToString();
+             ViewBag.Phone = LogİnUser.Phone.ToString();*/
             List<Users> Kullanicilar = _context.Users.ToList();
             return View(Kullanicilar);
         }
@@ -66,17 +66,17 @@ namespace WebProje.Controllers
             var user = _context.Users.Find(id);
             _context.Users.Remove(user);
             _context.SaveChanges();
-           
-            return RedirectToAction("Logout","Account");
+
+            return RedirectToAction("Logout", "Account");
         }
         [HttpPost]
         public async Task<IActionResult> Update(Users user)
         {
-            if (user.Id== null)
+            if (user.Id == null)
             {
                 return NotFound();
             }
-           
+
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
 
@@ -89,7 +89,7 @@ namespace WebProje.Controllers
             Users newuser = _context.Users.Find(LogİnUser.Id.ToString());
             newuser.Name = user.Name;
             newuser.LastName = user.LastName;
-           
+
             newuser.Phone = user.Phone;
 
             _context.Users.Update(newuser);

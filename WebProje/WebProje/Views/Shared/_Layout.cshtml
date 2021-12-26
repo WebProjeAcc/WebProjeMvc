@@ -30,7 +30,7 @@
 
 </head>
 
-<body id="reportsPage">
+<body id="reportsPage" class="bg02">
     <div class="" id="home">
         <div class="container">
             <div class="row">
@@ -38,18 +38,18 @@
                     <nav class="navbar navbar-expand-xl navbar-light bg-light">
                         <a class="navbar-brand" href="/Home/Index">
                             <i class="fas fa-3x fa-tachometer-alt tm-site-icon"></i>
-                            <h1 class="tm-site-title mb-0">Dashboard</h1>
+                            <h1 class="tm-site-title mb-0">Fırın</h1>
                         </a>
                         <button class="navbar-toggler ml-auto mr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
 
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="/Home/Index">
+                                    <a class="nav-link" href="/Home/Index">
                                         @lang["Home"]
                                         <span class="sr-only">(current)</span>
                                     </a>
@@ -75,11 +75,12 @@
                         </div>
                         <div class="header__top__right__language">
                             @*<img src="/lib/bootstrap/dist/img/language.png" alt="">*@
-                            <div>Diller</div>
+                            
+                            
                             <span class="arrow_carrot-down"></span>
                             <ul>
-                                <li><a   asp-route-culture="tr-TR">Türkçe</a></li>
-                                <li><a   asp-route-culture="en-US">English</a></li>
+                                <li><a asp-route-culture="tr-TR">Türkçe</a></li>
+                                <li><a asp-route-culture="en-US">English</a></li>
 
                             </ul>
                         </div>
