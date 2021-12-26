@@ -144,11 +144,23 @@
   <data name="Category" xml:space="preserve">
     <value>Kategori</value>
   </data>
+  <data name="Category Name" xml:space="preserve">
+    <value>Kategori İsmi</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>Şifre Tekrar</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
   <data name="Create a new category" xml:space="preserve">
     <value>Yeni Kategori Oluştur</value>
   </data>
   <data name="Delete Account" xml:space="preserve">
     <value>Hesabı Sil</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Açıklama</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Detay</value>
@@ -158,6 +170,9 @@
   </data>
   <data name="Email" xml:space="preserve">
     <value>E-Posta</value>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>Şifreni Mi Unuttun?</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Anasayfa</value>
@@ -179,6 +194,9 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Şifre</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Telefon Numarası</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Telefon Numarası</value>
@@ -215,5 +233,8 @@
   </data>
   <data name="Update" xml:space="preserve">
     <value>Güncelle</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Hoşgeldiniz</value>
   </data>
 </root>

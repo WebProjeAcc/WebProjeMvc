@@ -8,7 +8,7 @@
 <body class="bg02">
     <div class="row ">
         <div class="col-md-4">></div>
-        <div class="col-md-4 mt-3">
+        <div class="col-md-4 mt-3 mb-3">
             <h1>@lang["Create"]</h1>
             <h4>@lang["Product"]</h4>
             <hr />
@@ -48,7 +48,7 @@
                     @Html.DropDownListFor(x => x.CategoryID, (List<SelectListItem>)ViewBag.v1, new { @class = "form-control p-2" })
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />@lang["Create"]
+                    <input type="submit" value=@lang["Create"] class="btn btn-primary" />
                 </div>
             </form>
             <div>

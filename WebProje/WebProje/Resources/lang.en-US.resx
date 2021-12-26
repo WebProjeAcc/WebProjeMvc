@@ -141,11 +141,23 @@
   <data name="Categories" xml:space="preserve">
     <value>Categories</value>
   </data>
+  <data name="Category Name" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>Create</value>
+  </data>
   <data name="Create a new category" xml:space="preserve">
     <value>Create a new category</value>
   </data>
   <data name="Delete Account" xml:space="preserve">
     <value>Delete Account</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
   </data>
   <data name="Details" xml:space="preserve">
     <value>Details</value>
@@ -155,6 +167,9 @@
   </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
+  </data>
+  <data name="Forgot your password?" xml:space="preserve">
+    <value>Forgot your password?</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -176,6 +191,9 @@
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
   </data>
   <data name="Phone Number" xml:space="preserve">
     <value>Phone Number</value>
@@ -212,5 +230,8 @@
   </data>
   <data name="Update" xml:space="preserve">
     <value>Update</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
   </data>
 </root>
